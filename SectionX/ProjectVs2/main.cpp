@@ -3,6 +3,8 @@
 using namespace std;
 
 int main(){
+    int num{100};
+    
     cout << "Hello From Project2" << endl;
 
     int num;
