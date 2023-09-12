@@ -19,15 +19,15 @@ int main(){
     cout << "Number of small rooms: " << number_small_room << endl;
     cout << "Number of large rooms: " << number_large_room << endl;   
 
-    const int charge_small_room {25};
-    const int charge_large_room {35};
+    const double charge_small_room {25};
+    const double charge_large_room {35};
     cout << "Price per small room: " << charge_small_room << endl;
     cout << "Price per large room: " << charge_large_room << endl;
 
-    const int estimate_cost {number_small_room * charge_small_room + number_large_room * charge_large_room};
+    const double estimate_cost {number_small_room * charge_small_room + number_large_room * charge_large_room};
 
     const double sale_tax {0.06};
-    const int estimate_expiry {30}; 
+    const double estimate_expiry {30}; 
 
     cout << "Cost: $" << estimate_cost << endl;
     cout << "Tax: $" << estimate_cost * sale_tax << endl;
