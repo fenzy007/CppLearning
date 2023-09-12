@@ -5,14 +5,12 @@ using namespace std;
 int main(){
     cout << "Frank's Carpte Cleaning Service" << endl;
 
-    cout << "\nHow many small rooms would you like to clean: " << endl;
-
     int number_small_room {0};
+    cout << "\nHow many small rooms would you like to clean: " << endl;
     cin >> number_small_room;
 
-    cout << "\nHow many large rooms would you like to clean: " << endl;    
-
     int number_large_room {0};
+    cout << "\nHow many large rooms would you like to clean: " << endl;
     cin >> number_large_room;
 
 
