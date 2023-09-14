@@ -57,6 +57,8 @@ int main(){
   cout << "\nFirst element " << vector1.at(0) << endl;
   cout << "Second element " << vector1.at(1) << endl;
 
+  cout << "Vector1 contains: " << vector1.size() << " elements" << endl;
+
   //Moving to Vector2
   cout << "\nPLease enter the an element for vector2 "; //asked for the first element
 
@@ -72,6 +74,19 @@ int main(){
 
   cout << "\nFirst element " << vector2.at(0) << endl;
   cout << "Second element " << vector2.at(1) << endl;
+  cout << "Vector2 contains: " << vector2.size() << " elements\n" << endl;
+
+
+  //2D Vectors
+  vector <vector <int>> vector_2d; 
+
+  vector_2d.push_back(vector1);
+  vector_2d.push_back(vector2);
+
+  cout << vector_2d.at(0).at(0) << " " << vector_2d.at(0).at(1) << endl;
+  cout << vector_2d.at(1).at(0) << " " << vector_2d.at(1).at(1) << endl;
+
+
 
 
     return 0;
