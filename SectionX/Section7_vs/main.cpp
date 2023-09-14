@@ -86,8 +86,15 @@ int main(){
   cout << vector_2d.at(0).at(0) << " " << vector_2d.at(0).at(1) << endl;
   cout << vector_2d.at(1).at(0) << " " << vector_2d.at(1).at(1) << endl;
 
-
-
+  vector1.at(0) = 1000;
+  
+  cout << "\nVector_2d" << endl;
+  cout << vector_2d.at(0).at(0) << " " << vector_2d.at(0).at(1) << endl;
+  cout << vector_2d.at(1).at(0) << " " << vector_2d.at(1).at(1) << endl;
+  
+  cout << "\nVector1" << endl;  
+  cout << "\nFirst element " << vector1.at(0) << endl;
+  cout << "Second element " << vector1.at(1) << endl;
 
     return 0;
 }
