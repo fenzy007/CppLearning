@@ -39,6 +39,7 @@ int main(){
    */
 
    //Type coersion
+   /*
    cout << "PLease enter 3 integers: ";
 
    int num1{0};
@@ -64,7 +65,23 @@ int main(){
    cout << "\nThe number 1 is: " << num1 << endl;
    cout << "The number 2 is: " << num2 << endl;
    cout << "The number 3 is: " << num3 << endl;
+   */
+   
+   //Testing for Equalities
+   cout << boolalpha; //change trufy and falsy values from 1 and 0 to respectively true and false
 
+   bool equal_result {false};
+   bool not_equal_result {false};
+
+   int num1{}, num2{};
+
+   cout << "Enter two integers seperated by a space: ";
+   cin >> num1 >> num2;
+   equal_result = (num1 == num2);
+   not_equal_result = (num1 != num2);
+
+   cout << "\nComparison result (equals): " << equal_result << endl;
+   cout << "Comparison result (not equals): " << not_equal_result << endl;
 
     return 0;
 }
