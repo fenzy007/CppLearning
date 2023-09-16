@@ -68,6 +68,7 @@ int main(){
    */
    
    //Testing for Equalities
+   /*
    cout << boolalpha; //change trufy and falsy values from 1 and 0 to respectively true and false
 
    bool equal_result {false};
@@ -82,6 +83,21 @@ int main(){
 
    cout << "\nComparison result (equals): " << equal_result << endl;
    cout << "Comparison result (not equals): " << not_equal_result << endl;
+   */
+   
+   //Logical Operators
+   
+   int num{};
+   const int lower{10};
+   const int upper{20};
+   cout << boolalpha;
 
+   cout << "Please enter a number that is between " << lower << " and " << upper << ": ";
+   cin >> num;
+
+   bool within_bound{false};
+
+   within_bound = (num > lower && num < upper);
+   cout << "\nThe number you entered " <<"'" << num << "'" << " is between the bound? " << within_bound << endl;
     return 0;
 }
