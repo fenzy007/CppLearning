@@ -86,7 +86,7 @@ int main(){
    */
    
    //Logical Operators
-   
+   /*
    int num{};
    const int lower{10};
    const int upper{20};
@@ -99,5 +99,27 @@ int main(){
 
    within_bound = (num > lower && num < upper);
    cout << "\nThe number you entered " <<"'" << num << "'" << " is between the bound? " << within_bound << endl;
+   */
+
+  //Section Challenge
+
+  cout << "Enter the amount of cents you want to change: ";
+  int change{0}; 
+
+  cin >> change;
+
+  const int dollar_value {100};
+  const int quarter_value {25};
+  const int dime_value {10};
+  const int nickel_value {2};
+  const int penny_value {1};
+
+  int balance{}, dollars {}, quarters {}, dimes {}, nickels {}, pennys {}; 
+
+  cout << "\nYou can prodive the following changes:" << endl;  
+  dollars = change / dollar_value;
+  balance = change - (dollars * dollar_value);
+  cout << "Dollars : " << change;
+
     return 0;
 }
