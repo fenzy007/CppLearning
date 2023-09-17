@@ -22,7 +22,7 @@ int main()
 
     if(v.empty() == false)
     {
-        cout << "\n Vector is not empty" << endl;
+        cout << "\nVector is not empty" << endl;
     } else {
         cout << "Vector is empty";
     }
