@@ -44,5 +44,7 @@ int main()
     n.clear();
     cout << "The last size update is: " << n.size() << endl;
 
+    return 0;
+
 }
 */

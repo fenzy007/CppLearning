@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-
+/*
 int main()
 {
     vector <int> num;
@@ -16,4 +16,7 @@ int main()
     for(auto a = num.begin(); a != num.end(); a++)
     cout << *a << " ";
 
+    return 0;
+
 }
+*/
