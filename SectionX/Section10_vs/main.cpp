@@ -54,20 +54,25 @@ int main(){
     */
 
     //C++ style strings
-    string s0;
-    string s1 {"Apple"};
-    string s2 {"Banana"};
-    string s3 {"Kiwi"};
-    string s4 {"apple"};
-    string s5 {s1};
-    string s6 {s1, 0, 3};
-    string s7 {10, 'X'};
+    // string s0;
+    // string s1 {"Apple"};
+    // string s2 {"Banana"};
+    // string s3 {"Kiwi"};
+    // string s4 {"apple"};
+    // string s5 {s1};
+    // string s6 {s1, 0, 3};
+    // string s7 {10, 'X'};
 
+    string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+    string key {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
 
+    string secret_message {};
+    cout << "Enter your secret message: ";
+    getline(cin, secret_message); // because the user may type more than 1 word separated by a blank space
 
+    string encrypted_message {};
+    cout << "\nEncrypting message..." << endl;
 
-
-
-
+    cout << endl;
     return 0;
 }
