@@ -27,7 +27,7 @@ int main(){
     strcat(full_name, last_name);
 
     cout << "\nYour full name is: " << full_name << endl;
-    */
+    
 
     cout << "Enter your full name: ";
     cin.getline(full_name, 50);
@@ -51,6 +51,17 @@ int main(){
         }
     }
     cout << "Your full name is now: " << full_name << endl;
+    */
+
+    //C++ style strings
+    string s0;
+    string s1 {"Apple"};
+    string s2 {"Banana"};
+    string s3 {"Kiwi"};
+    string s4 {"apple"};
+    string s5 {s1};
+    string s6 {s1, 0, 3};
+    string s7 {10, 'X'};
 
 
 
