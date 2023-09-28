@@ -36,7 +36,7 @@ int main(){
     int max{6};
 
     cout << "Rand_MAX on my system is: " << RAND_MAX << endl;
-    srand(time(nullptr));
+    srand(time(nullptr)); //this is the seed it help generate new numbers each time function is ran
 
     for(size_t i{1}; i <= count; i++){
         random_number = rand() % max + min;
