@@ -9,8 +9,8 @@ int main(){
 
     // char first_name[20] {};
     // char last_name[20] {};
-    char full_name[50] {};
-    char temp[50] {};
+    // char full_name[50] {};
+    // char temp[50] {};
 
     /*
     cout << "Please enter your first name: ";
@@ -72,6 +72,23 @@ int main(){
 
     string encrypted_message {};
     cout << "\nEncrypting message..." << endl;
+
+    //We are gonna loop through the secret message letter by letter
+    for (char c: secret_message){
+        //then we look for the position of the letter in the alphabet
+        size_t position = alphabet.find(c);
+
+        //check if the position of the character exists
+        if(position != string::npos){
+            //if found we get the letter in the key string corresponding to that position
+            char new_key1 {key.at(position)};
+            encrypted_message += new_key1;
+        } else {
+            //if not, we just get the letter of c
+            encrypted_message += c;
+        }
+    }
+    cout << "encrypted output is: " << encrypted_message << endl;
 
     cout << endl;
     return 0;
