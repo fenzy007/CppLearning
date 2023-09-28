@@ -5,6 +5,23 @@
 
 using namespace std;
 
+//Function Definition
+
+const double pi{3.14159};
+
+double calc_area_circle(double radius){
+    return pi * radius * radius;
+}
+
+void area_circle(){
+
+    double radius{};
+
+    cout << "\nEnter the radius of the circle: ";
+    cin >> radius;
+    cout << "The area of a circle with radius " << radius << " is " << calc_area_circle(radius) << endl;
+}
+
 int main(){
     /*
     double num{};
@@ -28,7 +45,7 @@ int main(){
     cout << "\nEnter a power to raise " << num << " to: ";
     cin >> power;
     cout << num << " raised to the " << power << " power is: " << pow(num, power) << endl;
-    */
+    
 
     int random_number{};
     size_t count{10};
@@ -42,6 +59,10 @@ int main(){
         random_number = rand() % max + min;
         cout << random_number << endl;
     }
+    */
+
+    area_circle();
+    // volume_cylinder();
 
     cout << endl;
     return 0;
