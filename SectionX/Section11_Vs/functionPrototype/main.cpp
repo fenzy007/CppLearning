@@ -8,7 +8,7 @@ using namespace std;
 //Function Prototype
 //The order of the prototype doesn't matter
 double calc_area_circle(double);
-double calc_volume_cylinder(double);
+double calc_volume_cylinder(double, double);
 void area_circle();
 void volume_cylinder();
 void volume_cylinder();
@@ -43,7 +43,6 @@ void area_circle(){
     cout << "The area of a circle with radius " << radius << " is " << 
     calc_area_circle(radius) << endl;
 }
-
 
 void volume_cylinder(){
     double radius{};
