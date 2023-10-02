@@ -26,6 +26,4 @@ int main(){
     set_array(my_scores, 5, 100); //100 is the value of each element in the array
     print_array(my_scores, 5);
     print_array(my_scores, 5);
-
-
 }
