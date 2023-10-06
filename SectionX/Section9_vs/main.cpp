@@ -130,18 +130,14 @@ int main(){
 
                 case 'a':
                 case 'A': 
-                    if(vec.size() == 0){
-
-                    cout << "[] - the list is empty" << endl;
-                    
-
-                    } else{
+                    {
                         cout << "\nEnter the number you want to add to the list: ";
                         int a_number{};
                         cin >> a_number;
                         vec.push_back(a_number);
 
                         cout << "\n" << a_number << " was just added to the list." << endl;
+                        
 
                         cout << "The new list data is: " << endl;
                         
