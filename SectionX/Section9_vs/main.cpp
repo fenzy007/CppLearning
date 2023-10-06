@@ -116,9 +116,6 @@ int main(){
                     if(vec.size() == 0){
 
                     cout << "[] - the list is empty" << endl;
-                    // cout << "\nLet's Try this again. Enter your choice:";
-                    // cin >> selection; 
-
                     } else{
 
                         cout << "["; 
@@ -136,8 +133,7 @@ int main(){
                     if(vec.size() == 0){
 
                     cout << "[] - the list is empty" << endl;
-                    // cout << "\nLet's Try this again. Enter your choice:";
-                    // cin >> selection; 
+                    
 
                     } else{
                         cout << "\nEnter the number you want to add to the list: ";
@@ -164,9 +160,7 @@ int main(){
                 if(vec.size() == 0){
 
                     cout << "\nUnable to calculate the mean - no data." << endl;
-                    // cout << "\nLet's Try this again. Enter your choice:";
-                    // cin >> selection; 
-
+                    
                 } else{
                     int mean{};
 
@@ -184,9 +178,7 @@ int main(){
                     if(vec.size() == 0){
 
                     cout << "\nUnable to determine the smallest number - list is empty." << endl;
-                    // cout << "\nLet's Try this again. Enter your choice:";
-                    // cin >> selection; 
-
+                    
                     } else{
                         int smallest{};
 
@@ -203,9 +195,7 @@ int main(){
                 case 'L': if(vec.size() == 0){
 
                     cout << "\nUnable to determine the largest number - list is empty." << endl;
-                    // cout << "\nLet's Try this again. Enter your choice:";
-                    // cin >> selection; 
-
+                    
                     } else{
                         int largest{};
 
