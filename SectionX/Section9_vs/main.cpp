@@ -148,6 +148,14 @@ int main(){
                         cout << "\n" << a_number << " was just added to the list." << endl;
 
                         cout << "The new list data is: " << endl;
+                        
+                        cout << "["; 
+
+                        for(auto val: vec)  {
+                            cout << val << " ";
+                        } 
+
+                        cout << "]" << endl;
                     };
                     break;
 
@@ -192,7 +200,22 @@ int main(){
                     break;
 
                 case 'l':
-                case 'L': cout << "You selected, Display the largest number";
+                case 'L': if(vec.size() == 0){
+
+                    cout << "\nUnable to determine the largest number - list is empty." << endl;
+                    // cout << "\nLet's Try this again. Enter your choice:";
+                    // cin >> selection; 
+
+                    } else{
+                        int largest{};
+
+                        for (unsigned i {0}; i < vec.size() - 1; i++){
+                            if(vec.at(i) - vec.at(i + 1) < 0 ){
+                                largest = vec.at(i + 1);
+                            }
+                        }
+                        cout << "You selected, Display the largest number " << largest << endl;
+                    };
                     break;
 
                 case 'q':
