@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// ********************* Creates an array and then display using dynamic memory allocation *********************************
+
 //function prototype
 int *create_arr(size_t arr_size, int init_val);
 void display_arr(const int *const t_arr, size_t size);
