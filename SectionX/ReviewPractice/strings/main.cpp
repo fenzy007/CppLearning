@@ -54,7 +54,7 @@ int main()
     strcat(full_name, " ");
     strcat(full_name, last_name);
     
-    cout << "************Geting Full Name*************" << endl;
+    cout << "\n************Geting Full Name*************" << endl;
     
     for(size_t i = 0; i < 1000000000; i++){
         i;
