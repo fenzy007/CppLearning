@@ -4,6 +4,19 @@
 
 using namespace std;
 
+//Function Prototype
+void upper_converter(char *t_name);
+
+//Function Definition
+void upper_converter(char *t_name){
+    for(size_t i = 0; i < strlen(t_name); i++){
+        if(isalpha(t_name[i])){
+            t_name[i] = toupper(t_name[i]);
+        }
+    }
+};
+
+//Function Call
 int main() 
 {
     //How to get the full name
@@ -31,22 +44,14 @@ int main()
     }
     */
     
-    for(size_t i = 0; i < strlen(first_name); i++){
-        if(isalpha(first_name[i])){
-            first_name[i] = toupper(first_name[i]);
-        }
-    }
+    upper_converter(first_name);
     cout << "Your first name is " << first_name << "."<< endl;
     
     
     cout << "\nPlease enter your last name: ";
     cin >> last_name;
 
-    for(size_t i = 0; i < strlen(last_name); i++){
-        if(isalpha(last_name[i])){
-            last_name[i] = toupper(last_name[i]);
-        }
-    }
+    upper_converter(last_name);
     
     cout << "Your last name is " << last_name << endl;
     
