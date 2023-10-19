@@ -51,19 +51,12 @@ int main()
     cout << "\nPlease enter your last name: ";
     cin >> last_name;
 
-    upper_converter(last_name);
-    
+    upper_converter(last_name);    
     cout << "Your last name is " << last_name << endl;
     
     strcpy(full_name, first_name);
     strcat(full_name, " ");
     strcat(full_name, last_name);
-    
-    cout << "\n************Geting Full Name*************" << endl;
-    
-    for(size_t i = 0; i < 1000000000; i++){
-        i;
-    }
     
     cout << "\nYour full name is " << full_name << endl;
     
