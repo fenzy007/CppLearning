@@ -13,5 +13,8 @@ int main(){
     string s6 {s1, 0, 3};   // App
     string s7 (10, 'X');    // XXXXXXXXXX
 
+
+    cout << s5  +  " " + s4 << endl;
+
     return 0;
 }
