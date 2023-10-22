@@ -3,18 +3,40 @@
 
 using namespace std;
 
+//Function Prototype
+void char_trans(string *t_string);
+//Function Definition
+void char_trans(string *t_string){
+    for(size_t i{0}; i < t_string.length(); i++){
+        if(t_string[i] = t_string.at(0){
+
+        }
+    }
+}
+//Function call
 int main(){
-    string s0;
-    string s1 {"Apple"};
-    string s2 {"Banana"};
-    string s3 {"Kiwi"};
-    string s4 {"apple"};
-    string s5 {s1};         // Apple
-    string s6 {s1, 0, 3};   // App
-    string s7 (10, 'X');    // XXXXXXXXXX
+
+    string first_name;
+    
+    cout << "Please enter your name: ";
+    cin >> first_name;
+
+    cout << "\nYour first name is " << first_name << endl;
+
+    char_trans(&first_name);
 
 
-    cout << s5  +  " " + s4 << endl;
+    //Add stars after 3 characters
+    /*
+    string c {"Hello world"};
+    // Write C++ code here
+    for(size_t i{0}; i < c.length(); i++){
+        if(i % 3 == 0 && i != 0){
+            cout << "****" << endl;
+        }
+        cout << c.at(i) << endl;
+    }
+    */
 
     return 0;
 }
