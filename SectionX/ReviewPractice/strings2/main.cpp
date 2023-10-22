@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-
+/*
 //Function Prototype
 void char_trans(string *t_string);
 //Function Definition
@@ -13,6 +13,8 @@ void char_trans(string *t_string){
         }
     }
 }
+*/
+
 //Function call
 int main(){
 
@@ -23,7 +25,11 @@ int main(){
 
     cout << "\nYour first name is " << first_name << endl;
 
-    char_trans(&first_name);
+    // char_trans(&first_name);
+
+    //transform cpp string to c-style string
+    const char *first_name_prt = first_name.c_str();
+    cout << first_name_prt << endl;
 
 
     //Add stars after 3 characters
