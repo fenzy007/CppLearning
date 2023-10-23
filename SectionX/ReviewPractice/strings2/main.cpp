@@ -5,7 +5,7 @@ using namespace std;
 
 //Function call
 int main(){
-
+    /*
     string first_name;
     
     cout << "Please enter your name: ";
@@ -15,6 +15,15 @@ int main(){
     const char *first_name_prt = first_name.c_str();
 
     cout << "So your name is " << first_name_prt << ", right?"<< endl;
+    */
+
+
+    char c[] = "Hello World2"; // we use the cstring lib in this case
+    
+    string c2 = c;
+    
+    cout << c2 << endl;
+
 
 
     //Add stars after 3 characters
