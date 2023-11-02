@@ -13,15 +13,6 @@ void area_circle();
 void volume_cylinder();
 void volume_cylinder();
 
-int main(){    
-
-    area_circle();
-    volume_cylinder();
-
-    cout << endl;
-    return 0;
-}
-
 const double pi{3.14159};
 
 double calc_area_circle(double radius){
@@ -56,4 +47,13 @@ void volume_cylinder(){
     cout << "The volume of a cylinder with radius" << radius << " and height " << height << " is " <<
     calc_volume_cylinder(radius, height) << endl;
 
+}
+
+int main(){    
+
+    area_circle();
+    volume_cylinder();
+
+    cout << endl;
+    return 0;
 }
