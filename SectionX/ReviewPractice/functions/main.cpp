@@ -11,8 +11,9 @@ double add_numbers(double a, double b){
     return a + b;
 }
 
-int main() {    
-    cout << add_numbers(2, 3) << endl;
+int main() {  
+    double adds =  add_numbers(2, 3); 
+    cout << adds << endl;
 
 
     return 0;
