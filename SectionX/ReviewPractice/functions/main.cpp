@@ -12,7 +12,7 @@ double add_numbers(double a, double b){
 }
 
 int main() {    
-    add_numbers(2, 3);
+    cout << add_numbers(2, 3) << endl;
 
 
     return 0;
