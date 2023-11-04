@@ -4,6 +4,7 @@
 #include <ctime>
 
 using namespace std;
+//Basic Functions 
 /*
 //function prototype
 double add_numbers(double, double);
@@ -22,6 +23,7 @@ int main() {
 }
 */
 
+/*
 //function prototype
 void area_circle();
 double calc_area_circle(double);
@@ -46,4 +48,31 @@ void area_circle(){
 int main(){
     area_circle();
     return 0;
+}
+*/
+
+
+//Formal Vs Actual Parameter - Passing By Value
+
+//Function Prototype
+void manipul_data(int);
+
+//Function Def
+void manipul_data(int formal_data){
+    cout << formal_data << endl;
+    formal_data = 200;
+
+    cout << formal_data << endl;
+}
+
+//Function Called
+int main(){
+    int act_data {100};
+
+    cout << act_data << endl;
+
+    manipul_data(act_data);
+
+    cout << act_data << endl; 
+    //Value didn't change after the manipulation function was called. That's because it is passed by value.
 }
