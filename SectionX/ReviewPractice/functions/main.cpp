@@ -53,7 +53,7 @@ int main(){
 
 
 //Formal Vs Actual Parameter - Passing By Value
-
+/*
 //Function Prototype
 void manipul_data(int);
 
@@ -76,3 +76,27 @@ int main(){
     cout << act_data << endl; 
     //Value didn't change after the manipulation function was called. That's because it is passed by value.
 }
+*/
+
+//Function Overloading
+/*
+//Function Prototype
+int add_numbers(int, int);
+double add_numbers(double, double);
+
+//Function Definition
+int add_numbers(int a, int b){
+    return a + b;
+}
+
+double add_numbers(double a, double b){
+    return a + b;
+}
+//Function call
+int main(){
+    cout << add_numbers(2,3) << endl;
+    cout << add_numbers(2.3, 3.4) << endl;
+    
+    return 0;
+}
+*/
