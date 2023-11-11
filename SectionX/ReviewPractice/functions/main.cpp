@@ -100,3 +100,20 @@ int main(){
     return 0;
 }
 */
+
+//Passing Arrays to functions
+void display(int, size_t size);
+
+void display(int arr[], size_t size){
+    for(size_t i = 0 ; i < size; i++){
+        cout << arr[i] + 1 << endl;
+    }
+}
+
+int main(){
+    int numbers[] {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+
+    display(numbers, 10);
+
+    return 0;
+}
