@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <vector>
 
 using namespace std;
 //Basic Functions 
@@ -102,6 +103,7 @@ int main(){
 */
 
 //Passing Arrays to functions
+/*
 void display(int, size_t size);
 
 void display(int arr[], size_t size){
@@ -114,6 +116,24 @@ int main(){
     int numbers[] {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 
     display(numbers, 10);
+
+    return 0;
+}
+*/
+
+//Passing vectors to functions
+void get_vector(vector<int>);
+
+void get_vector(vector<int> vec){
+    for(size_t i = 0; i < vec.size(); i++){
+        cout << vec.at(i) << endl;
+    }
+}
+
+int main(){
+    vector <int> data {1, 2, 3, 4, 5};
+
+    get_vector(data);
 
     return 0;
 }
