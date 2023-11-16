@@ -122,6 +122,7 @@ int main(){
 */
 
 //Passing vectors to functions
+/*
 void get_vector(vector<int>);
 
 void get_vector(vector<int> vec){
@@ -136,4 +137,23 @@ int main(){
     get_vector(data);
 
     return 0;
+}
+*/
+
+//Passing vectors and arrays to functions - Part 2
+
+int main(){
+    vector<string> foods;
+
+    foods = {"grapes", "carrot", "lemon"};
+
+    foods.push_back("tortillas");
+
+    for(size_t i{0}; i < foods.size(); i++){
+        cout << foods[i] << endl;
+    }
+    for(auto food: foods){
+        cout << food << endl;
+    }
+
 }
