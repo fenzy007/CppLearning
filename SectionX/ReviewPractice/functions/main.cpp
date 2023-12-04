@@ -6,7 +6,7 @@
 
 using namespace std;
 //Basic Functions 
-/*
+
 //function prototype
 double add_numbers(double, double);
 
@@ -22,7 +22,7 @@ int main() {
 
     return 0;
 }
-*/
+
 
 /*
 //function prototype
@@ -142,6 +142,7 @@ int main(){
 
 //Passing vectors and arrays to functions - Part 2
 
+/*
 int main(){
     vector<string> foods;
 
@@ -157,3 +158,4 @@ int main(){
     }
 
 }
+*/
