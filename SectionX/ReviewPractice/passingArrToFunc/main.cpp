@@ -20,6 +20,8 @@ void printArray(string items[], int size)
 
 void printVector(vector<string> items)
 {
+    items[0] = "tomato";
+
     for(size_t i{0}; i < items.size() ; i++)
     {
         cout << items[i] << endl;
@@ -51,8 +53,7 @@ int main(){
     //     cout << food << endl;
     // }
 
-    system("pause");
-    
+    system("pause");  
     
     return 0;
 }
