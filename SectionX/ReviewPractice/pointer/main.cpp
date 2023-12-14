@@ -18,5 +18,21 @@ int main()
     print(&age);
 
     cout << age << endl;
+
+    /*
+    int x = 5;
+    int *y = &x;
+
+    int z = 6;
+
+
+
+    cout << x << " " << &x << " " << y << " " << *y << " " << &y << " " << z << " " << &z <<  endl;
+
+    y = &z;
+
+    cout << x << " " << &x << " " << y << " " << *y << " " << &y << " " << z << " " << &z <<  endl;
+    */
+
     return 0;
 }
