@@ -34,5 +34,12 @@ int main()
     cout << x << " " << &x << " " << y << " " << *y << " " << &y << " " << z << " " << &z <<  endl;
     */
 
+    /*
+    - When when we define a function with a pointer, first we call the function using the address of the variable we want to work with
+    second we define the function using the pointer declaration
+    third, inside this function call, we use the derefenced value of the pointer.
+
+    */
+
     return 0;
 }
