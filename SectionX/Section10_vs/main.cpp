@@ -3,9 +3,23 @@
 #include <cctype>
 
 using namespace std;
+void print_pattern(int *n);
 
-int main(){
-    //best practice is always initializing your variables.
+void print_pattern(int *n)
+{
+    for (int i = 1; i <= *n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+int main()
+{
+    // best practice is always initializing your variables.
 
     // char first_name[20] {};
     // char last_name[20] {};
@@ -27,7 +41,7 @@ int main(){
     strcat(full_name, last_name);
 
     cout << "\nYour full name is: " << full_name << endl;
-    
+
 
     cout << "Enter your full name: ";
     cin.getline(full_name, 50);
@@ -53,16 +67,17 @@ int main(){
     cout << "Your full name is now: " << full_name << endl;
     */
 
-    //C++ style strings
-    // string s0;
-    // string s1 {"Apple"};
-    // string s2 {"Banana"};
-    // string s3 {"Kiwi"};
-    // string s4 {"apple"};
-    // string s5 {s1};
-    // string s6 {s1, 0, 3};
-    // string s7 {10, 'X'};
+    // C++ style strings
+    //  string s0;
+    //  string s1 {"Apple"};
+    //  string s2 {"Banana"};
+    //  string s3 {"Kiwi"};
+    //  string s4 {"apple"};
+    //  string s5 {s1};
+    //  string s6 {s1, 0, 3};
+    //  string s7 {10, 'X'};
 
+    /*
     string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
     string key {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
 
@@ -91,5 +106,13 @@ int main(){
     cout << "encrypted output is: " << encrypted_message << endl;
 
     cout << endl;
+    */
+
+    int numb;
+    cout << "Please enter the amount of iteration you want: ";
+    cin >> numb;
+
+    print_pattern(&numb);
+
     return 0;
 }
