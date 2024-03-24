@@ -94,12 +94,12 @@ void print_pattern(int *n)
         // }
         cout << endl;
     }    */
-    
+
 
     //Using Alphabets
     char alphabet = 'a';
     
-    for(int i = 1; i<= *n; i++){
+    for(int i = 1; i<= *n; i++){ // for the reverse, (int i = *n; i >= 1; i--)
         for(int j = 1 ; j <= i; j++){
             cout << alphabet;
         }
