@@ -96,8 +96,8 @@ void print_pattern(int *n)
 
     //piramids shape
     char alphabet = 'a';
-    
-    for(int i = 1; i<= *n; i++)
+
+    /*for(int i = 1; i<= *n; i++)
     { 
         
         for(int k = *n - i; k >=1; k--)
@@ -105,6 +105,21 @@ void print_pattern(int *n)
             cout << "-";
         }
         for(int j = 1 ; j <= i; j++)
+        {
+            cout << alphabet++ << " ";
+        }
+        cout << endl;
+    }*/
+
+    //reverse piramids
+    for(int i = *n; i>= 1; i--)
+    { 
+        
+        for(int k = *n - i; k >=1; k--)
+        {
+            cout << "-";
+        }
+        for(int j = i ; j >=1 ; j--)
         {
             cout << alphabet++ << " ";
         }
