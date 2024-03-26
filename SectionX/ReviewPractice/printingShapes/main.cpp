@@ -77,7 +77,7 @@ void print_pattern(int *n)
     }*/
 
     // reverse triangles with numbers
-    for (int i = *n; i >= 1; i--)
+    /*for (int i = *n; i >= 1; i--)
     {
         for (int k = *n - i; k > 0; k--)
         {
@@ -91,6 +91,23 @@ void print_pattern(int *n)
         // {
         //     cout << j;
         // }
+        cout << endl;
+    }*/
+
+    //piramids shape
+    char alphabet = 'a';
+    
+    for(int i = 1; i<= *n; i++)
+    { 
+        
+        for(int k = *n - i; k >=1; k--)
+        {
+            cout << "-";
+        }
+        for(int j = 1 ; j <= i; j++)
+        {
+            cout << alphabet++ << " ";
+        }
         cout << endl;
     }
 }
