@@ -112,7 +112,7 @@ void print_pattern(int *n)
     }*/
 
     //reverse piramids
-    for(int i = *n; i>= 1; i--)
+    /*for(int i = *n; i>= 1; i--)
     { 
         
         for(int k = *n - i; k >=1; k--)
@@ -122,6 +122,20 @@ void print_pattern(int *n)
         for(int j = i ; j >=1 ; j--)
         {
             cout << alphabet++ << " ";
+        }
+        cout << endl;
+    }*/
+
+    //how it would look like if we did not decrement the i loop
+    for(int i = 1; i <= *n; i++)
+    {
+        for(int k = 1; k <= i - 1; k++)
+        {
+            cout << "-";
+        }
+        for(int j = *n - i; j >= 0; j--)
+        {
+            cout << "* ";
         }
         cout << endl;
     }
