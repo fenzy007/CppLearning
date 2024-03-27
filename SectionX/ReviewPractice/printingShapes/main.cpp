@@ -135,7 +135,7 @@ void print_pattern(int *n)
         }
         for(int j = *n - i; j >= 0; j--)
         {
-            cout << "* ";
+            cout << alphabet++ << " ";
         }
         cout << endl;
     }
