@@ -95,7 +95,7 @@ void print_pattern(int *n)
     }*/
 
     //piramids shape
-    char alphabet = 'a';
+    //char alphabet = 'a';
 
     /*for(int i = 1; i<= *n; i++)
     { 
@@ -127,7 +127,7 @@ void print_pattern(int *n)
     }*/
 
     //how it would look like if we did not decrement the i loop
-    for(int i = 1; i <= *n; i++)
+    /*for(int i = 1; i <= *n; i++)
     {
         for(int k = 1; k <= i - 1; k++)
         {
@@ -138,7 +138,34 @@ void print_pattern(int *n)
             cout << alphabet++ << " ";
         }
         cout << endl;
+    }*/
+
+    //printing a square
+    for( int i = 1; i <= *n; i++)
+    {
+        for(int j = 0; j <(*n * 2); j++)
+        {
+            if(i + j  <= *n) //prints * from 0 to n exampl: n=5
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+            
+            if(j >= (i + *n - 1)) // prints " " from 0 to n - 1
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
     }
+
 }
 
 int main()
@@ -151,3 +178,4 @@ int main()
 
     return 0;
 }
+
