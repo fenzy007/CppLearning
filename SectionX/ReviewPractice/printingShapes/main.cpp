@@ -141,11 +141,11 @@ void print_pattern(int *n)
     }*/
 
     //printing a square
-    for( int i = 1; i <= *n; i++)
+    for( int i = 0; i < *n; i++)
     {
         for(int j = 0; j <(*n * 2); j++)
         {
-            if(i + j  <= *n) //prints * from 0 to n exampl: n=5
+            if(i + j  <= *n - 1) //prints * from 0 to n - 1 exampl: n=5
             {
                 cout << "*";
             }
@@ -154,12 +154,32 @@ void print_pattern(int *n)
                 cout << " ";
             }
             
-            if(j >= (i + *n - 1)) // prints " " from 0 to n - 1
+            if(j >= (i + *n)) // prints " " from 0 to n 
             {
                 cout << "*";
             }
             else
             {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    for( int i = 0; i < *n; i++)
+    {
+        for(int j = 0; j <(*n * 2); j++)
+        {
+            if(i >= j){ // we want this to only work on the first iteration when  0 = 0, incrementally
+                cout << "*";
+            }
+            else{
+                cout << " ";
+            }
+            if(i >= (*n * 2 - 1) - j){ // we want this to only work on the last iteration when  9 = 9, decrementally
+                cout << "*";
+            }
+            else{
                 cout << " ";
             }
         }
