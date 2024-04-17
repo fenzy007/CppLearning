@@ -170,13 +170,13 @@ void print_pattern(int *n)
     {
         for(int j = 0; j <(*n * 2); j++)
         {
-            if(i >= j){ // we want this to only work on the first iteration when  0 = 0, incrementally
+            if(i >= j){ // we want this to only work on the first iteration when  0 >= 0 or 1 >= 1, incrementally
                 cout << "*";
             }
             else{
                 cout << " ";
             }
-            if(i >= (*n * 2 - 1) - j){ // we want this to only work on the last iteration when  9 = 9, decrementally
+            if(i >= (*n * 2 - 1) - j){ // we want this to only work on the last iteration when  0 >= 0 or 1 >= 1, decrementally
                 cout << "*";
             }
             else{
