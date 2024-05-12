@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-/*
+/*POINTER WITH REFERENCE START
 void print(int *va);
 
 void print(int *va)
@@ -89,6 +89,7 @@ int main()
     
     delete [] my_arr;
     */
+   //See word document for how to use array with functions in dynamic memory allocation
 
     return 0;
 }
