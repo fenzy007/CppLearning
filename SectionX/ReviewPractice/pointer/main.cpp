@@ -2,6 +2,7 @@
 #include <vector>
 
 using namespace std;
+/*
 void print(int *va);
 
 void print(int *va)
@@ -11,14 +12,25 @@ void print(int *va)
         *va = 29;
     }
 }
+*/
+
+int *largest_int(int, int);
+
+int *largest_int(int *m, int *n)
+{
+    if(*m > *n)
+        return m;
+    else
+        return n;
+}
 
 int main()
 {
-    int age{40};
+    // int age{40};
 
-    print(&age);
+    // print(&age);
 
-    cout << age << endl;
+    // cout << age << endl;
 
     /*
     int x = 5;
@@ -40,6 +52,7 @@ int main()
 
     */
 
+   /*
     vector<string> names{"marc", "fenzy", "kenley", "dave", "miguel", "antenor"};
 
     for (size_t i{0}; i < names.size(); i++)
@@ -48,6 +61,16 @@ int main()
     }
 
     cout << sizeof(names.at(0)) << endl;
+    */
+
+   int a {100};
+   int b {200};
+
+   int *largest_ptr {nullptr};
+
+   largest_ptr = largest_int(&a, &b);
+
+   cout << *largest_ptr << endl;
 
     return 0;
 }
