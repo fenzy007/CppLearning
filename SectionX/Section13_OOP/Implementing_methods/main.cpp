@@ -81,7 +81,7 @@ int main()
         cout << "Withdraw successfully" << endl;
     }else
     {
-        cout << "Withdrwa failed" << endl;
+        cout << "Withdraw failed" << endl;
     }
 
     return 0;
