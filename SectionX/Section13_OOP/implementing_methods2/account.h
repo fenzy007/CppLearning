@@ -1,4 +1,6 @@
 //account.h
+//Specification
+//Avoid using namespace std(not necessary)
 
 #ifndef _ACCOUNT_H_
 #define _ACCOUNT_H_

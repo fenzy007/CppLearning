@@ -1,6 +1,7 @@
 #include "account.h"
 
 //Implementation
+//Avoid using namespace std(not necessary)
 
 void Account::set_name(std::string n)
 {
