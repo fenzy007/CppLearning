@@ -19,7 +19,7 @@ public:
         name = n;
     }
 
-    //overloaded constructors
+    //Default Constructor
     Player()
     {
         name = "None";
