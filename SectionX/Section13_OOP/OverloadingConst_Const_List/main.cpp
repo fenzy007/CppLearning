@@ -20,25 +20,25 @@ public:
 };
 
 Player::Player()
-    :name{"None"}, health{0}, xp{0} {
+    : name{"None"}, health{0}, xp{0} {
     }
 
 Player::Player(string name_val)
-    :name{name_val}, health{0}, xp{0} {
+    : name{name_val}, health{0}, xp{0} {
     }
     
 Player::Player(string name_val, int health_val, int xp_val)
-    :name{name_val}, health{health_val}, xp{xp_val} {
+    : name{name_val}, health{health_val}, xp{xp_val} {
     }
 
 
 int main()
 {
-    {
-        Player slayer;
-        Player frank{"Frank"};
-        Player villain{"Villain", 100, 55};
-    }
+    
+    Player slayer;
+    Player frank{"Frank"};
+    Player villain{"Villain", 100, 55};
+    
     
 
     return 0;
