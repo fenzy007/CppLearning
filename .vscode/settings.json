@@ -47,5 +47,7 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "synthwave84.brightness": 0.75
+    
 }
