@@ -11,12 +11,16 @@ private:
     int xp;
 
 public:
-    PLayer(); //no args consturctor
-    PLayer(string name_val);
-    PLayer(string name_val, int health_val, int xp_val);
+/*
+    PLayer(); //no-args consturctor
+    PLayer(string name_val); //single-args
+*/
+
+    PLayer(string name_val = "None", int health_val = 0, int xp_val = 0);//three-args
 
 };
 
+/*
 PLayer::PLayer()
     : PLayer{"None", 0,0}{
         cout << "no args const"<< endl;
@@ -26,6 +30,7 @@ PLayer::PLayer(string name_val)
     :PLayer{name_val, 0, 0}{
         cout << "single args const"<< endl;
     }
+*/
 
 PLayer::PLayer(string name_val, int health_val, int xp_val)
     : name{name_val}, health{health_val}, xp{xp_val}{
@@ -36,6 +41,7 @@ int main()
 {
     PLayer empty;
     PLayer marc{"Marc"};
+    PLayer hero{"Hero", 85};// could only compiled using the default param with def const
     PLayer villain{"Villain", 100, 55};
     
     return 0;
