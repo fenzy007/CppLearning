@@ -11,16 +11,18 @@ private:
     int xp;
 
 public:
-/*
+/*Delegating
     PLayer(); //no-args consturctor
     PLayer(string name_val); //single-args
 */
 
-    PLayer(string name_val = "None", int health_val = 0, int xp_val = 0);//three-args
+    PLayer(string name_val = "None", 
+            int health_val = 0, 
+            int xp_val = 0);//three-args -> Default parameter
 
 };
 
-/*
+/*Delegating
 PLayer::PLayer()
     : PLayer{"None", 0,0}{
         cout << "no args const"<< endl;
@@ -32,7 +34,7 @@ PLayer::PLayer(string name_val)
     }
 */
 
-PLayer::PLayer(string name_val, int health_val, int xp_val)
+PLayer::PLayer(string name_val, int health_val, int xp_val) //Default parameter
     : name{name_val}, health{health_val}, xp{xp_val}{
         cout << "three args const"<< endl;
     }
