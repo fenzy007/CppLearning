@@ -25,7 +25,7 @@ public:
     {
         return xp;
     }
-    //Default Constructor with default parameter values - definition
+    //Default Constructor with default arguments - definition
     Player(string name_val = "None", int health_val= 0, int xp_val = 0);
 
     //Copy constructor

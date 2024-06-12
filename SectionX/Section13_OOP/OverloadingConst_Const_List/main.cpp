@@ -12,6 +12,7 @@ private:
 
 public:
     //Overloaded Constructor
+    //Here we only declare the constructor 
     Player();
     Player(string name_val);
     Player(string name_val, int health_val, int xp_val);
@@ -19,6 +20,7 @@ public:
 
 };
 
+//We initialize the constructor outside
 Player::Player()
     : name{"None"}, health{0}, xp{0} {
     }

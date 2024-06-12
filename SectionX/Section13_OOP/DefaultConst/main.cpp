@@ -20,6 +20,8 @@ public:
     }
 
     //Default Constructor
+    //Here we declare and define the constructor
+    //inside the class
     Player()
     {
         name = "None";
