@@ -19,7 +19,7 @@ Player::Player(const Player &source)
 Player::~Player()
 {
     --num_players;
-    cout << "Desctructor called for: " << name << endl;
+    std::cout << "Desctructor called for: " << name << std::endl;
 }
 
 int Player::get_num_players()
