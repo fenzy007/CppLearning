@@ -49,7 +49,7 @@ void print_pattern(int *n)
     */
 
     // print reverse inverse triangle
-    /*
+    /*0
     for (int i = *n; i >= 1; i--)
     {
         for (int k = *n - i; k > 0; k--)
@@ -188,7 +188,7 @@ void print_pattern(int *n)
         cout << endl;
     }
 
-    }    */
+
 
 
     //Using Alphabets
