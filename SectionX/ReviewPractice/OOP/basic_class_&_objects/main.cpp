@@ -20,9 +20,9 @@ public:
 
 int main()
 {
-    YouTubeChannel ytChannel;
+    YouTubeChannel ytChannel; //This is an object
 
-    ytChannel.Name = "X-Machina";
+    ytChannel.Name = "X-Machina"; // this is a property value
     ytChannel.OwnerName = "Marc";
     ytChannel.SubscriberCount = 2000;
     ytChannel.PlublisedVideoTitles = {"Mango", "Potato", "Banana", "Apple"};
@@ -39,9 +39,6 @@ int main()
     }
 
     cout << sizeof(ytChannel.PlublisedVideoTitles) << endl;
-
-
-
 
 
     return 0;
