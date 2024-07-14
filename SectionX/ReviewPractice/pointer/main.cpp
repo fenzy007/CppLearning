@@ -89,7 +89,7 @@ int main()
     
     delete [] my_arr;
     */
-   //See word document for how to use array with functions in dynamic memory allocation
+   //See word document for how to use array with functions in dynamic memory allocation page 118
 
     return 0;
 }
