@@ -27,9 +27,25 @@ public:
         // We don't have to use object.property, because we are still inside the class
         cout << "Name: " << Name << endl;
         cout << "OwnerName: " << OwnerName << endl;
-        cout << "SubscriberCount: " << SubscriberCount << endl;
+        cout << "SubscriberCount: " << SubscriberCount << endl;        
 
-        cout << "Video: " << endl;
+        //create the vector
+        char selection{};
+        do
+        {
+            string item{};
+            cout <<"Please enter the desired item name: ";
+            cin >> item;
+
+            PlublisedVideoTitles.push_back(item);
+
+            cout << "\nDo you want to add another? (Y/N): ";
+            cin >> selection;
+        }
+        while(selection == 'Y' || selection == 'y');
+        
+        //Print the vector
+        cout << "\nVideo: " << endl;
         for(string vids: PlublisedVideoTitles)
         {
             cout << vids << endl;
