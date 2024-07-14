@@ -8,7 +8,7 @@ void printArray(string, int);
 void printVector(string);
 
 //function definition
-void printArray(string items[], int size)
+void printArray(string items[], size_t size)
 {   
     items[0] = "potato";
     
