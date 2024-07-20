@@ -12,10 +12,12 @@ private:
 protected:
     std::string Class_Author;
     int NumberOfBooks;
+    std::list<std::string> booksTitles;
 public:
     BooksToRead(std::string name, std::string author, int numbooks = 1);
     void getDetails();
-    //void setBookList();
+    void setBookList();
+    void displayBookList();
 };
 
 #endif
