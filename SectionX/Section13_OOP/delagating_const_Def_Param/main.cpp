@@ -32,6 +32,7 @@ PLayer::PLayer(string name_val)
     :PLayer{name_val, 0, 0}{
         cout << "single args const"<< endl;
     }
+    // we delegated to the 3rd constructor. Basically it is a constructor calling another constructor
 */
 
 PLayer::PLayer(string name_val, int health_val, int xp_val) //Default parameter
