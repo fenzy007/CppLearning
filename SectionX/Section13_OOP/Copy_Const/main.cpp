@@ -44,8 +44,9 @@ Player::Player(string name_val, int health_val, int xp_val)
     cout << "Three-args constructor for " + name << endl;
 }
 
-Player::Player(const Player &source)
-    :name{source.name}, health{source.health}, xp{source.xp}
+Player::Player(const Player &source) //&source is the address of the contructor that we will pass in
+    //:name{source.name}, health{source.health}, xp{source.xp}  OLD WAY
+    :Player{source.name,source.health, source.xp} //delagating
 {
     cout << "Copy constructor - made a copy of " << source.name << endl;
 }
