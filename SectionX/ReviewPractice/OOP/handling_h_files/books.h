@@ -18,6 +18,8 @@ public:
     void getDetails();
     void setBookList();
     void displayBookList();
+
+    ~BooksToRead(){};
 };
 
 #endif
