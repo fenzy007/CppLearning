@@ -33,4 +33,5 @@ void BooksToRead::displayBookList()
     {        
         std::cout << books << " ";
     }
+    std::cout << std::endl;
 }

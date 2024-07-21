@@ -12,5 +12,11 @@ int main()
     marcsStrories.setBookList();
     marcsStrories.displayBookList();
 
+    BooksToRead kenStories{"Stories By Kenley", "Kenley"};
+    kenStories.getDetails();
+
+    BooksToRead absStories{};
+    absStories.getDetails();
+
     return 0;
 }
