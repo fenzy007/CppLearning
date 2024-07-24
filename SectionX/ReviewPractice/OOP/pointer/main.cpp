@@ -52,8 +52,8 @@ int main() {
     int max = arr[0];
     printMinMax(arr, sizeof(arr)/sizeof(arr[0]), &min, &max);
     
-    cout << min << endl;
-    cout << max << endl;
-    
+    cout << "Min: " << min << endl;
+    cout << "Max: " << max << endl;
+
     return 0;
 }
