@@ -8,12 +8,12 @@ int main()
 {
     BooksToRead marcsStrories{"Stories By Marc", "Marc", 5};
     marcsStrories.getDetails();
-    marcsStrories.setBookList();
+    // marcsStrories.setBookList();
     marcsStrories.displayBookList();
 
     BooksToRead kenStories(marcsStrories);
     kenStories.getDetails();
-    kenStories.setBookList();
+    // kenStories.setBookList();
     kenStories.displayBookList();
     
     return 0;
