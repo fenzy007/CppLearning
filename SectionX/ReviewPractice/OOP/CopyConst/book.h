@@ -18,6 +18,7 @@ public:
         std::string author = "N/A",
         int numbooks = 0
     );
+    BooksToRead(const BooksToRead &source);
 
     void getDetails();
     void setBookList();

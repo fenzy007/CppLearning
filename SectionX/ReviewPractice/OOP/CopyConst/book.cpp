@@ -8,7 +8,11 @@ BooksToRead::BooksToRead(
 ) : Class_Name{name}, //Initialisation list
     Class_Author{author}, 
     NumberOfBooks{numbooks}
-{};
+{}
+
+BooksToRead::BooksToRead(const BooksToRead &source)
+    :BooksToRead{source.Class_Name, source.Class_Author, source.NumberOfBooks}
+{}
 
 void BooksToRead::getDetails()
 {
@@ -44,4 +48,6 @@ void BooksToRead::displayBookList()
 BooksToRead::~BooksToRead(){
     delete[]BooksTitles;
     BooksTitles = nullptr;
+
+    std::cout << "Destructor called for " << Class_Name;
 };
