@@ -14,7 +14,8 @@ protected:
     int NumberOfBooks;
     std::list<std::string> booksTitles;
 public:
-    BooksToRead(std::string name = "Sorry! Book in Progress", std::string Class_Author = "N/A", int numbooks = 0);
+    BooksToRead(std::string name = "Sorry! Book in Progress", 
+                std::string Class_Author = "N/A", int numbooks = 0);
     void getDetails();
     void setBookList();
     void displayBookList();
