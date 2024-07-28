@@ -3,17 +3,28 @@
 
 #include <string>
 
-class book
+class BooksToRead
 {
 private:
     std::string Class_Name;
 protected:
     std::string Class_Author;
     int NumberOfBooks;
-    std::string* BooksTitels;
-    
-public:
+    std::string* BooksTitles;
 
+public:
+    BooksToRead(
+        std::string name = "Sorry! Book in progress",
+        std::string author = "N/A",
+        int numbooks = 0
+    );
+    BooksToRead(const BooksToRead &source);
+
+    void getDetails();
+    void setBookList();
+    void displayBookList();
+
+    ~BooksToRead();
 };
 
 #endif
