@@ -21,6 +21,6 @@ int main()
     // kenStories.setBookList();
     kenStories.displayBookList();
     
-    PrintBook(marcsStrories);
+    PrintBook(marcsStrories); //friend function
     return 0;
 }

@@ -28,7 +28,7 @@ BooksToRead::BooksToRead(const BooksToRead &source)
     BooksTitles = new std::string [NumberOfBooks];
     for(int i = 0; i < NumberOfBooks; i++)
     {
-          BooksTitles[i] = source.BooksTitles[i];    
+          source.BooksTitles[i] = BooksTitles[i];    
     }
     std::cout<<std::endl;
 }
