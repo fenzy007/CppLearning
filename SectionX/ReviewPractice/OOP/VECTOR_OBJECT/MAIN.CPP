@@ -6,10 +6,10 @@
 
 using namespace std;
 
-void fillVector(vector<STUDENT>&);
+void fillVector(vector<STUDENT>*);
 void printVectorr(const vector<STUDENT>&);
 
-void fillVector(vector<STUDENT>& newMyClass)
+void fillVector(vector<STUDENT> *newMyClass)
 {
     cout << "How many students are in the your class? ";
     int classSize;
@@ -26,7 +26,7 @@ void fillVector(vector<STUDENT>& newMyClass)
         cin >> grade;
 
         STUDENT newStudent(name, grade);
-        newMyClass.push_back(newStudent);
+        newMyClass->push_back(newStudent);
     }
 }
 
@@ -47,7 +47,7 @@ void printVectorr(const vector<STUDENT>& newMyClass)
 int main()
 {
     vector<STUDENT> myClass;
-    fillVector(myClass);
+    fillVector(&myClass);
     printVectorr(myClass);
 
     return 0;
