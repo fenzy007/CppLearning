@@ -9,12 +9,12 @@ STUDENT::STUDENT(std::string name, char grade)
 STUDENT::~STUDENT()
 {}
 
-std::string STUDENT::getName const()
+std::string STUDENT::getName() const
 {
     return newName;
 }
 
-char STUDENT::getGrade const()
+char STUDENT::getGrade() const
 {
     return newGrade;
 }

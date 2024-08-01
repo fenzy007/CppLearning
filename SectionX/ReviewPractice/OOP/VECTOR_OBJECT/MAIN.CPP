@@ -22,7 +22,7 @@ void fillVector(vector<STUDENT>& newMyClass)
     {
         cout << "\nEnter Student name: ";
         cin >> name;
-        cout << "\nEnter Student grade: ";
+        cout << "Enter Student grade: ";
         cin >> grade;
 
         STUDENT newStudent(name, grade);
@@ -36,9 +36,10 @@ void printVectorr(const vector<STUDENT>& newMyClass)
 
     for(unsigned int i = 0; i < size; i++)
     {
+        cout << endl;
         cout << "Student name: "<< newMyClass[i].getName() << endl;
         cout << "Student grade: "<< newMyClass[i].getGrade() << endl;
-        cout << endl;
+        
     }
 }
 
