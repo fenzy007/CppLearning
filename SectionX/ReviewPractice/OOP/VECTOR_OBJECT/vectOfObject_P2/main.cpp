@@ -11,9 +11,20 @@ private:
 
 public:
     explicit MyClass(int x = 0): num{x}{}
+    MyClass(const MyClass &source) : MyClass{source.num}{}
     void print() const { cout << "num= " << num << endl;}
     void change(int x) {num = x;}
 };
+
+void printMyClassVector(const vector<MyClass>& vct) //does the same thing as the loops in main
+{
+    cout << "\nPrinting from printMyClassVector: "<< endl;
+    for(MyClass const& v: vct)
+    {
+        cout << " ";
+        v.print();
+    }
+}
 
 int main()
 {
@@ -42,5 +53,7 @@ int main()
         v->print();
     }
 
+    printMyClassVector(vec1);
+    // printMyClassVector(vec2); //error
     return 0;
 }
