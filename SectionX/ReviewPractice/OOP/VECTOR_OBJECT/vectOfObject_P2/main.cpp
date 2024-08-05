@@ -21,11 +21,12 @@ int main()
     vector<MyClass*> vec2;
     MyClass varb;
 
-    for(int i=0; i<=5; i++)
+    for(int i=1; i<=5; i++)
     {
         varb.change(i);
         vec1.push_back(varb);
-        vec2.push_back(&varb);
+        //vec2.push_back(&varb);//That's the same obect, we just update the value
+        vec2.push_back(new MyClass(i));
     }
 
     cout << "vec1: " << endl;
