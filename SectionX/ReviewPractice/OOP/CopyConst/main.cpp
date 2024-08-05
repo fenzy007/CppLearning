@@ -1,8 +1,13 @@
 #include "book.h"
-
+#include <iostream>
 #include <string>
 
 using namespace std;
+
+void PrintBook(BooksToRead book){
+    cout << "Title: " << book.Class_Name << endl;
+    cout << "Author: " <<book.Class_Author << endl;
+}
 
 int main()
 {
@@ -16,5 +21,6 @@ int main()
     // kenStories.setBookList();
     kenStories.displayBookList();
     
+    PrintBook(marcsStrories); //friend function
     return 0;
 }
