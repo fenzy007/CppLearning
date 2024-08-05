@@ -46,8 +46,8 @@ void printVectorr(const vector<STUDENT>& newMyClass)
 //MAIN CPP 
 int main()
 {
-    vector<STUDENT> myClass;
-    fillVector(&myClass);
+    vector<STUDENT> myClass; //This vector is based on the class STUDENT. Therefore we can use it to create new oobjects within
+    fillVector(&myClass); //pass the vector by reference because we will want to chnage what is inside
     printVectorr(myClass);
 
     return 0;
