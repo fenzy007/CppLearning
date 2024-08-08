@@ -6,7 +6,7 @@ using namespace std;
 
 //function prototype
 int *create_arr(size_t arr_size, int init_val);
-void display_arr(const int *const t_arr, size_t size);
+void display_arr(const int *const arr, size_t size);
 
 //function definition
 //We use pointer functions when we want to create memory dynamically in the heap
@@ -41,7 +41,8 @@ int main(){
     cout << "Please enter the inital values: ";
     cin >> init_val;
 
-    t_arr = create_arr(arr_size, init_val); //when we call the function we don't include the data type
+    t_arr = create_arr(arr_size, init_val); 
+    //when we call the function we don't include the data type
 
     display_arr(t_arr, arr_size);
 
