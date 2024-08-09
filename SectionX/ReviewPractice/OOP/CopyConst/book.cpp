@@ -23,7 +23,9 @@ BooksToRead::BooksToRead(
 }
 
 BooksToRead::BooksToRead(const BooksToRead &source)
-    :BooksToRead{source.Class_Name, source.Class_Author, source.NumberOfBooks}
+    :BooksToRead{source.Class_Name, 
+                 source.Class_Author, 
+                 source.NumberOfBooks}
 {
     BooksTitles = new std::string [NumberOfBooks];
     for(int i = 0; i < NumberOfBooks; i++)

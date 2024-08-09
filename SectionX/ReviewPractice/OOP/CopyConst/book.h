@@ -26,7 +26,8 @@ public:
 
     ~BooksToRead();
 
-    friend void PrintBook(BooksToRead book); //friend function
+    friend void PrintBook(BooksToRead book); 
+    //friend function
 };
 
 #endif
