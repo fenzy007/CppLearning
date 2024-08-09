@@ -1,8 +1,7 @@
-//#include "book.h"
+#include "book.h"
 #include <iostream>
 
 using namespace std;
-
 //In this Example we will create the array in main
 //Contrary to the copy const Example
 
@@ -44,7 +43,8 @@ int main()
 
     createArr = fun_createArr(size);
 
-    printArr(createArr, size);
+    //printArr(createArr, size);
+    //BooksToRead marcStories{"stories by Marc", "Marc", createArr, size};
 
     delete[] createArr;
     createArr =nullptr;
