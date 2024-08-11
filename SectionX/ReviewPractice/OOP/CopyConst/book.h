@@ -20,6 +20,8 @@ public:
     );
     BooksToRead(const BooksToRead &source);
 
+    BooksToRead(BooksToRead &&source) noexcept;
+
     void getDetails();
     // void setBookList();
     void displayBookList();
