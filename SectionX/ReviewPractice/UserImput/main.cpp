@@ -10,8 +10,16 @@ string* createArr(unsigned int arrSize)
 
     for(unsigned int i{0}; i < arrSize; i++)
     {
+        string name{};
         cout << "Please enter item (" << i + 1<<"): ";
-        cin >> newArr[i];
+        
+        if(cin >> name) //can't get it to work so far
+        {
+            newArr[i] = name;
+        } else{
+            cin.clear();
+            cin.ignore(10000, '\n');
+        }
     }
 
     return newArr;
