@@ -35,6 +35,14 @@ BooksToRead::BooksToRead(const BooksToRead &source)
     std::cout<<std::endl;
 }
 
+BooksToRead::BooksToRead(BooksToRead &&source) noexcept
+    : Class_Name{source.Class_Name}, Class_Author{source.Class_Author},
+        NumberOfBooks{source.NumberOfBooks}, BooksTitles{source.BooksTitles}
+    {
+        source.BooksTitles = nullptr;
+        std::cout << "Move constructor - moving resource:" << BooksTitles[0] << std::endl;
+    }
+
 void BooksToRead::getDetails()
 {
     std::cout <<"Name: " << Class_Name << std::endl;

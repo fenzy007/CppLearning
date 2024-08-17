@@ -24,7 +24,7 @@ class Move{
         //Copy onstructor
         Move (const Move &source);
 
-        //Move onstructor
+        //Move constructor
         Move(Move &&source) noexcept;
 
         //Destructor
