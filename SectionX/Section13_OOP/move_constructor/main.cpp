@@ -22,7 +22,7 @@ class Move{
         Move (int d);
 
         //Copy onstructor
-        Move (const Move &source);
+        // Move (const Move &source);
 
         //Move constructor
         Move(Move &&source) noexcept;
@@ -39,11 +39,11 @@ Move::Move(int d)
     cout<< "Constructor for: " << d << endl;
 } 
 
-Move::Move(const Move &source) 
-    :Move{*source.data}
-{
-    cout << "Copy constructor - deep copy for: " << *data << endl;
-}
+// Move::Move(const Move &source) 
+//     :Move{*source.data}
+// {
+//     cout << "Copy constructor - deep copy for: " << *data << endl;
+// }
 
 Move::Move(Move &&source) noexcept
     :data{source.data}
