@@ -5,8 +5,12 @@
 using namespace std;
 
 void PrintBook(BooksToRead book){
-    cout << "Title: " << book.Class_Name << endl;
-    cout << "Author: " <<book.Class_Author << endl;
+    cout << "Books written by the author " <<"'"<< book.Class_Author << "'" << ": ";
+
+    for(int i = 0; i < book.NumberOfBooks; i++)
+    {        
+        std::cout << book.BooksTitles[i] << " ";
+    }
 }
 
 int main()

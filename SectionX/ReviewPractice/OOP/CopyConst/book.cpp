@@ -23,16 +23,20 @@ BooksToRead::BooksToRead(
 }
 
 BooksToRead::BooksToRead(const BooksToRead &source)
-    :BooksToRead{source.Class_Name, 
-                 source.Class_Author, 
-                 source.NumberOfBooks}
-{
+    :Class_Name{source.Class_Name} , Class_Author {source.Class_Author}, 
+                NumberOfBooks{source.NumberOfBooks}
+{    
     BooksTitles = new std::string [NumberOfBooks];
     for(int i = 0; i < NumberOfBooks; i++)
     {
-          source.BooksTitles[i] = BooksTitles[i];    
+          BooksTitles[i] = source.BooksTitles[i];    
     }
     std::cout<<std::endl;
+    /*Because this is a copy, it should not be asking me to imput new 
+    elements to the array. It should have known what's there and copy 
+    them directly to the new object we are creating.
+    We cannot delegate, because not all the data is inside the 
+    delegation list*/
 }
 
 void BooksToRead::getDetails()
@@ -72,6 +76,5 @@ BooksToRead::~BooksToRead(){
     delete[]BooksTitles;
     BooksTitles = nullptr;
 
-    std::cout << "Destructor called for " << Class_Name;
+    std::cout << "\nDestructor called for " << Class_Name;
 };
-
