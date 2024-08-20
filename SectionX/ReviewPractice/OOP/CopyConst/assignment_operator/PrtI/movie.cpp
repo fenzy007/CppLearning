@@ -28,6 +28,7 @@ Movie::Movie(const Movie& source)
     {
         Class_actors[i] = source.Class_actors[i];
     }
+    //because we are not creating the array dynamically. we can delegate
 
 }
 
@@ -110,5 +111,5 @@ void Movie::printInfo() const
         }
         
     }
-    std::cout<<std::endl;
+    std::cout<<"\n"<<std::endl;
 }
