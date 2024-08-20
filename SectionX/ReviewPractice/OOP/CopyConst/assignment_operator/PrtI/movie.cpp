@@ -22,11 +22,15 @@ Movie::Movie(const Movie& source)
 
 Movie& Movie::operator = (const Movie& source)
 {
-    Class_Name = source.Class_Name;
-    Class_Genre = source.Class_Genre;
-    Class_Rating = source.Class_Rating;
+    if(&source != this) //if we are not copying the same object to itself
+    {
+        Class_Name = source.Class_Name;
+        Class_Genre = source.Class_Genre;
+        Class_Rating = source.Class_Rating;
 
-    return *this;
+        return *this;
+    }
+    
 
     /*operator assignment looks/works very similarly to copy
         constructor. However, how it works is that it copies
