@@ -10,7 +10,8 @@ private:
     
 protected:
     float Class_Rating;
-
+    int Class_actorsCounter;
+    std::string* Class_actors;
 public:
     Movie(std::string name = "None", 
           std::string genre = "None", 
@@ -19,6 +20,11 @@ public:
     Movie(const Movie& source); //copy constructor
     
     Movie& operator = (const Movie& source); //operator assignment
+
+    ~Movie();
+
+    void addActor(std::string newActorName);
+    void printInfo() const;
 };
 
 #endif
