@@ -73,7 +73,8 @@ Movie::~Movie()
 void Movie::addActor(std::string newActorName)
 {
     std::string* newActors = new std::string[Class_actorsCounter + 1];
-
+    //+1 because we are adding one more element
+    
     for(int i{0}; i < Class_actorsCounter; i++)
     {//here Class_actorsCounter is still = 0
         newActors[i] = Class_actors[i];
