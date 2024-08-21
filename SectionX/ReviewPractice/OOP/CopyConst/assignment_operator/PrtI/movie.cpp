@@ -14,9 +14,9 @@ Movie::Movie(std::string name,
 }
 
 Movie::Movie(const Movie& source)
-    : Movie{source.Class_Name, 
-            source.Class_Genre, 
-            source.Class_Rating}
+    : Class_Name{source.Class_Name}, 
+        Class_Genre{source.Class_Genre}, 
+        Class_Rating{source.Class_Rating}
 {
     /*copy constructor creates a new object based on the values
         of another object that was passes to it*/
@@ -73,12 +73,13 @@ Movie::~Movie()
 void Movie::addActor(std::string newActorName)
 {
     std::string* newActors = new std::string[Class_actorsCounter + 1];
+
     for(int i{0}; i < Class_actorsCounter; i++)
-    {
+    {//here Class_actorsCounter is still = 0
         newActors[i] = Class_actors[i];
     }
     newActors[Class_actorsCounter] = newActorName;
-    // here Class_actorsCounter = Class_actorsCounter + 1
+    // here Class_actorsCounter = Class_actorsCounter + 1, interpolation
 
     delete [] Class_actors;
     //here we delete the old array
