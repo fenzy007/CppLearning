@@ -19,7 +19,18 @@ int main(){
 
     movie1.addActor("Marc Antenor");
     movie1.addActor("Kenley Antenor");
+    
+    movie2.addActor("Christian Bale");
+    movie2.addActor("Denzel W.");
+    movie2.addActor("Leo Dicaprio");
+
     movie1.printInfo();
+    movie2.printInfo();
+
+    Movie movie3(movie1);
+    movie3.printInfo();
+    movie3 = movie2;
+    movie3.printInfo();
 
     return 0;
 }
