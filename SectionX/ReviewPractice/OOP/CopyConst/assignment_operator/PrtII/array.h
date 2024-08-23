@@ -17,7 +17,9 @@ public:
 
     ~ARRAY();
 
-    void printData();
+    void printData() const;
     void setData(int index, int value);
+
+    // friend void printAnArray(const ARRAY &arr);
 };
 #endif
