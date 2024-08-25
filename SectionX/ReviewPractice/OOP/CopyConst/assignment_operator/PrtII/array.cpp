@@ -20,7 +20,7 @@ ARRAY::ARRAY(const ARRAY& source)
     }
 }
 
-ARRAY& ARRAY::operator=(const ARRAY& source)
+ARRAY& ARRAY::operator=(const ARRAY& source) noexcept
 {
     if(&source != this)
     {

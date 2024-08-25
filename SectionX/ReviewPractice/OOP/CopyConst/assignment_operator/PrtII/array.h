@@ -13,7 +13,7 @@ public:
 
     ARRAY(const ARRAY& source);
 
-    ARRAY& operator=(const ARRAY& source);
+    ARRAY& operator=(const ARRAY& source) noexcept;
 
     ~ARRAY();
 
