@@ -20,11 +20,11 @@ int main()
     // marcsStrories.setBookList();
     marcsStrories.displayBookList();
 
-    BooksToRead kenStories(marcsStrories);
+    BooksToRead kenStories(move(marcsStrories));
     kenStories.getDetails();
     // kenStories.setBookList();
     kenStories.displayBookList();
     
-    PrintBook(marcsStrories); //friend function
+    PrintBook(kenStories); //friend function
     return 0;
 }

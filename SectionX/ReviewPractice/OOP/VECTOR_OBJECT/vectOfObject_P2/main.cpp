@@ -36,8 +36,8 @@ int main()
     {
         varb.change(i);
         vec1.push_back(varb);
-        //vec2.push_back(&varb);//That's the same obect, we just update the value
-        vec2.push_back(new MyClass(i));
+        vec2.push_back(&varb);//That's the same obect, we just update the value
+        // vec2.push_back(new MyClass(i));
     }
 
     cout << "vec1: " << endl;
