@@ -29,8 +29,20 @@ public:
         memcpy(m_Data, other.m_Data, m_Size);
     }
 
+    STRING(STRING&& other) noexcept
+    {
+        printf("Moved!\n");
+        m_Size = other.m_Size;
+        m_Data = other.m_Data;
+        
+        other.m_Size = 0;
+        other.m_Data = nullptr;
+
+    }
+
     ~STRING()
     {
+        printf("Destroyed!\n");
         delete[]m_Data;
     }
 
@@ -51,6 +63,9 @@ private: STRING m_Name;
 public:
     Entity(const STRING& name)
         : m_Name(name){ }
+
+    Entity(const STRING&& name)
+        : m_Name((STRING&&)name){ }
     
     void PrintName()
     {
@@ -60,7 +75,8 @@ public:
 
 int main()
 {
-    Entity entity(STRING("Fenzy"));
+    Entity entity("Fenzy");
+    entity.PrintName();
 
     return 0;
 }

@@ -32,12 +32,27 @@ BooksToRead::BooksToRead(const BooksToRead &source)
           BooksTitles[i] = source.BooksTitles[i];    
     }
     std::cout<<std::endl;
+
+    std::cout << "Copy constructor called for " << Class_Name << std::endl;
+
     /*Because this is a copy, it should not be asking me to imput new 
     elements to the array. It should have known what's there and copy 
     them directly to the new object we are creating.
     We cannot delegate, because not all the data is inside the 
     delegation list*/
 }
+
+BooksToRead::BooksToRead(BooksToRead &&source) noexcept 
+        : Class_Name{source.Class_Name}, 
+          Class_Author{source.Class_Author}, 
+          NumberOfBooks{source.NumberOfBooks}, 
+          BooksTitles{source.BooksTitles} // Steal the pointer 
+    { 
+               source.BooksTitles = nullptr; // Null the source pointer
+               source.NumberOfBooks = 0; // Reset the source number of books 
+               std::cout << "\nMove constructor called for " << Class_Name << std::endl;
+               std::cout << std::endl;
+    }
 
 void BooksToRead::getDetails()
 {
@@ -64,7 +79,7 @@ void BooksToRead::setBookList()
 
 void BooksToRead::displayBookList()
 {
-    std::cout << "\nCurrently published books are: ";
+    std::cout << "Currently published books are: ";
 
     for(int i = 0; i < NumberOfBooks; i++)
     {        
