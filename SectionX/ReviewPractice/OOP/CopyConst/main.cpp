@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void PrintBook(BooksToRead book){
+void PrintBook(const BooksToRead &book){
     cout << "Books written by the author " <<"'"<< book.Class_Author << "'" << ": ";
 
     for(int i = 0; i < book.NumberOfBooks; i++)
