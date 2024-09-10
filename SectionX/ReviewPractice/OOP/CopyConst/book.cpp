@@ -5,7 +5,8 @@ BooksToRead::BooksToRead(
     std::string name,  //parameters
     std::string author,
     int numbooks
-) : Class_Name{name}, //Initialisation list
+) 
+   :Class_Name{name}, //Initialisation list
     Class_Author{author}, 
     NumberOfBooks{numbooks}
 {
@@ -23,8 +24,9 @@ BooksToRead::BooksToRead(
 }
 
 BooksToRead::BooksToRead(const BooksToRead &source)
-    :Class_Name{source.Class_Name} , Class_Author {source.Class_Author}, 
-                NumberOfBooks{source.NumberOfBooks}
+    :Class_Name{source.Class_Name} , 
+     Class_Author {source.Class_Author}, 
+     NumberOfBooks{source.NumberOfBooks}
 {    
     BooksTitles = new std::string [NumberOfBooks];
     for(int i = 0; i < NumberOfBooks; i++)
