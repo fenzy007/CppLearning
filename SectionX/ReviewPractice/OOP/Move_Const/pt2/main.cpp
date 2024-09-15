@@ -51,6 +51,11 @@ public:
         size_t p_size = 100;
         p = new int[p_size];
 
+        for(size_t i = 0; i < p_size; i++)
+        {
+            *p = i;
+        }
+
         cout << "Default Constructor" << endl;
     }
 
@@ -117,6 +122,16 @@ public:
         
     }
 
+    void printObj()
+    {
+        cout<<"\nPrint function"<< endl;
+
+        for(size_t i = 0; i < p_size; i++)
+        {
+            cout << i << " ";
+        }
+    }
+
     // ~TestClass()
     // {
     //     delete[] p;
@@ -125,18 +140,34 @@ public:
     //     cout <<"\nDestructor called" << endl;
     // }
 
+    // friend void printObj(const TestClass &obj);
+
 };
+
+// void printObj(const TestClass &obj)
+// {
+//     cout<<"\nPrint function"<< endl;
+
+//     for(size_t i = 0; i < obj.p_size; i++)
+//     {
+//         cout << obj.p[i] << " ";
+//     }
+// }
 
 int main()
 {
     TestClass a;
-    TestClass b(a);
+    // TestClass b(a);
 
-    TestClass c;
-    c = a;
+    // TestClass c;
+    // c = a;
 
-    TestClass d(move(c));
+    // TestClass d(move(c));
 
-    TestClass e;
-    e = move(b);
+    // TestClass e;
+    // e = move(b);
+
+    //print function;
+
+    a.printObj();
 }
