@@ -42,15 +42,29 @@ main()
 //Class Basic Understanding copy and move
 class TestClass
 {
+    int *p;
+    size_t p_size;
 public:
 
     TestClass()
     {
+        size_t p_size = 100;
+        p = new int[p_size];
+
         cout << "Default Constructor" << endl;
     }
 
     TestClass(const TestClass &source)
     {
+        p_size = source.p_size;
+        p = new int[p_size];
+        //the moment the object is created, it invokes the source. so, no need to do delete[]
+
+        for(size_t i = 0; i < p_size; i++)
+        {
+            p[i] = source.p[i];
+        }
+
         cout << "Copy Constructor" << endl;
     }
 
@@ -58,6 +72,16 @@ public:
     {
         if(&source != this)
         {
+            p_size = source.p_size;
+            delete [] p;
+            //at the time the source is called a p was already created for this
+            //we need to delete[] this p to assign the source.p to it
+
+            p = new int[p_size];
+            for(size_t i = 0 ; i < p_size; i++)
+            {
+                p[i] = source.p[i];
+            }
             cout << "Copy Assigment Operator" << endl;
             return *this;
         }
@@ -65,14 +89,41 @@ public:
     }
 
     TestClass(TestClass &&original)
-    {
+    {   
+        p_size = original.p_size;
+        p = original.p;
+
+        original.p_size = 0;
+        original.p = nullptr;
+
         cout << "Move constructor" << endl;
     }
 
     TestClass &operator = (TestClass &&original) noexcept
     {
-        cout << "Move assignment operator" << endl;
+        if(&original != this)
+        {
+            delete [] p;
+
+            p_size = original.p_size;
+            p = original.p;
+
+            original.p_size = 0;
+            original.p = nullptr;
+            
+            cout << "Move assignment operator" << endl;
+            return *this;
+        }
+        
     }
+
+    // ~TestClass()
+    // {
+    //     delete[] p;
+    //     p = nullptr;
+
+    //     cout <<"\nDestructor called" << endl;
+    // }
 
 };
 
@@ -88,4 +139,6 @@ int main()
 
     TestClass e;
     e = move(b);
+
+    //print function;
 }
