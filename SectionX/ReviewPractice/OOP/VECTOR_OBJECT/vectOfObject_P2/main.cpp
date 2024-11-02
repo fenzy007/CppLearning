@@ -16,7 +16,8 @@ public:
     void change(int x) {num = x;}
 };
 
-void printMyClassVector(const vector<MyClass>& vct) //does the same thing as the loops in main
+void printMyClassVector(const vector<MyClass>& vct) 
+//does the same thing as the loops in main
 {
     cout << "\nPrinting from printMyClassVector: "<< endl;
     for(MyClass const& v: vct)
@@ -36,8 +37,8 @@ int main()
     {
         varb.change(i);
         vec1.push_back(varb);
-        vec2.push_back(&varb);//That's the same obect, we just update the value
-        // vec2.push_back(new MyClass(i));
+        //vec2.push_back(&varb);//That's the same obect, we just update the value
+         vec2.push_back(new MyClass(i));
     }
 
     cout << "vec1: " << endl;
@@ -56,4 +57,6 @@ int main()
     printMyClassVector(vec1);
     // printMyClassVector(vec2); //error
     return 0;
+
+    //POINT IS DON'T USE POINTERS AND REFERENCES UNNECESSARILY WITH VECTORS
 }
