@@ -15,7 +15,7 @@ public:
     {
         cout << name << " says " << text_to_say << endl;
     }
-    bool is_dead();
+    //bool is_dead();
 };
 
 class Account {
