@@ -18,10 +18,11 @@ class Integer
     void bump() {shared++;}
 
     static void updateShared(int i) {shared = i;}
-    static int retrieveShared() {return shared;}
+    static int retrieveShared() {return shared;} //We do not use const because static functions can't update instance variables
     //these functions can be executed without an instance of class Integer being instantiated
 
     //Static member functions cannot access instance variables
+    
 };
 
     //defition of the static variable
