@@ -54,14 +54,14 @@ Movie& Movie::operator = (const Movie& source)
         }
 
         return *this;
-    }    
-
+    };    
     /*operator assignment looks/works very similarly to copy
         constructor. However, how it works is that it copies
         and then reassign values to already created object.
         It is not considered as a constructor, by the compiler
         and so it cannot take member initialezers.
-        Neither does it take member delegation*/
+        Neither does it take member delegation
+    */
 }
 
 Movie::~Movie()
