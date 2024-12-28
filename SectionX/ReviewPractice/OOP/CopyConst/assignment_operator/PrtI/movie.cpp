@@ -32,7 +32,7 @@ Movie::Movie(const Movie& source)
 
 }
 
-Movie& Movie::operator = (const Movie& source)
+Movie &Movie::operator = (const Movie &source) noexcept
 {
     if(&source != this) //if we are not copying the same object to itself
     {

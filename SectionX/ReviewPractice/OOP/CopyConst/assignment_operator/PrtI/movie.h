@@ -19,7 +19,7 @@ public:
     
     Movie(const Movie& source); //copy constructor
     
-    Movie& operator = (const Movie& source); //operator assignment
+    Movie& operator = (const Movie& source) noexcept; //operator assignment
 
     ~Movie();
 
