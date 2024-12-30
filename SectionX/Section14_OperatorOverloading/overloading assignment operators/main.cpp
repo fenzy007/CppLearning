@@ -1,4 +1,5 @@
 #include <iostream>
+#include "MyString.h"
 
 using namespace std;
 
@@ -7,7 +8,15 @@ using namespace std;
 //The method operator equal; that's how we declare methods that overload operators
 int main()
 {
-    cout << "Hello World" << endl;
+    MyString empty;
+    MyString larry("Larry");
+    MyString stooge;
+    stooge = larry;
+
+
+    empty.display();
+    larry.display();
+    stooge.display();
 
     return 0;
 }
