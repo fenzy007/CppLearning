@@ -13,6 +13,14 @@ int main()
     	{
 			cout << name << endl;
         }
+
+    cout << "*************EXAMPLE 2 **************" << endl;
+
+    for(auto name = name1.begin(); name != name1.end(); name ++)
+    {
+        cout << *name << endl;
+    }
+
     return 0;
 }
 */

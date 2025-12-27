@@ -3,6 +3,7 @@
 
 using namespace std;
 
+/*
 int main()
 {
     vector <int> num;
@@ -23,6 +24,25 @@ int main()
         cout << *a << " ";
     }
 
+    cout << endl;
+    cout << "*************EXAMPLE 2 **************" << endl;
+
+    cout << "Output from the beginning to the end: ";
+    for(auto a : num)
+    {
+        cout << a << " ";
+    }
+
     return 0;
 
 }
+*/
+
+/*
+num.begin() returns an iterator, not a raw value:
+- In C++ STL, a vector<int> stores elements contiguously, but begin() does not return the actual first integer.
+- Instead, it returns an iterator pointing to the first element.
+- An iterator acts like a pointer: it "points" to an element and can be incremented to move through the vector.
+
+Confirmed: num.begin() and num.end(), works like pointers. You need to dereference them.
+*/  

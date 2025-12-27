@@ -2,6 +2,7 @@
 #include <vector>
 
 using namespace std;
+
 /*
 int main()
 {
@@ -19,6 +20,7 @@ int main()
 
     v.resize(5);
     cout << "\nVector size after resizing is: " << v.size() << endl;
+    cout << "\nCapacity after resizing is: " << v.capacity() << endl;
 
     if(v.empty() == false)
     {
