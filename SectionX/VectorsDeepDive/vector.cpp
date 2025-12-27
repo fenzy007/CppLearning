@@ -26,6 +26,7 @@ int main()
     cout << "\nLast Element: " << n[no - 1] << endl;
 
     cout << "Current vector size: " << n.size() << endl;
+    //Note: The size of the vertor is 11. However, the last lement has the index of 10
 
     //pop back to remove element at the end of the vector
     n.pop_back();

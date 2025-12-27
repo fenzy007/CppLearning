@@ -28,11 +28,13 @@ MyString::MyString(const MyString &source)
 {
     str = new char[std::strlen(source.str) + 1];
     strcpy(str, source.str);
+    std::cout << "Copy Constructor Used" << std::endl;
 }
 
 //Copy Assignment Operator
 MyString &MyString::operator=(const MyString &rhs)
 {
+    std::cout << "Copy Assignment Operator Used" << std::endl;
     if(this == &rhs)
         return *this;
     

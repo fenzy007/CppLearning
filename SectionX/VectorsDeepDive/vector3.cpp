@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-
+/*
 int main()
 {
     vector <int> v;
@@ -31,3 +31,4 @@ int main()
     return 0;
 
 }
+*/

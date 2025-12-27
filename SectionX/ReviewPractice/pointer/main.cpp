@@ -2,6 +2,8 @@
 #include <vector>
 
 using namespace std;
+///**** https://www.youtube.com/watch?v=kiUGf_Z08RQ&t=181s *****
+
 /*POINTER WITH REFERENCE START
 void print(int *va);
 
@@ -44,10 +46,12 @@ int main()
     y = &z;
 
     cout << x << " " << &x << " " << y << " " << *y << " " << &y << " " << z << " " << &z <<  endl;
+    ***NOTE*** in &y, though we give it a new value(address), it still prints it's orinigal address of &x
     
-    - When when we define a function with a pointer, first we call the function using the address of the variable we want to work with
-    second we define the function using the pointer declaration
-    third, inside this function call, we use the derefenced value of the pointer to assign values.
+    - When we define a function with a pointer, 
+        first we call the function using the address of the variable we want to work with
+        second we define the function using the pointer declaration
+        third, inside this function call, we use the derefenced value of the pointer to assign values.
 
     
     vector<string> names{"marc", "fenzy", "kenley", "dave", "miguel", "antenor"};

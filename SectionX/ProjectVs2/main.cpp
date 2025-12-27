@@ -7,7 +7,7 @@ int main(){
     
     cout << "Hello From Project2" << endl;
 
-    int num;
+    //int num;
     cout << "Please enter your favorite number: ";
     cin >> num;
 
