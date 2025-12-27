@@ -15,6 +15,7 @@ int main()
     cout << "Output from the beginning to the end: ";
     for(auto a = num.begin(); a != num.end(); a++)
     cout << *a << " ";
+    cout << "****"<< endl;
 
     return 0;
 
