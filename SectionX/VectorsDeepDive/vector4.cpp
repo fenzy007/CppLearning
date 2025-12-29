@@ -35,11 +35,25 @@ int main()
     }*/
 
     //vector insert a value multiple times
-    name1.insert(name1.begin() + 3, 4, "mondi");
+    /*name1.insert(name1.begin() + 3, 4, "mondi");
     for(auto name : name1)
     {
         cout << name << endl;
+    }*/
+
+    //vector rbegin
+    for(auto name = name1.rbegin(); name != name1.rend(); ++name)
+    {
+        cout << *name << endl;
     }
+    cout << "**********************" << endl;
+    for(auto name = name1.rbegin(); name < name1.rend(); ++name)    
+    {
+        cout << *name << endl;
+    }
+    //The rend() function returns a reverse iterator pointing to a position right before the first element of a vector. 
+    //This represents the end of the vector when iterating in reverse.
+    //Therefore we have to select and only select the < operator. Reason is because rend can't be included
 
     return 0;
 }
