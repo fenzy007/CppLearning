@@ -58,7 +58,6 @@ int main(){
 
   cout << "\nFirst element " << vector1.at(0) << endl;
   cout << "Second element " << vector1.at(1) << endl;
-
   cout << "Vector1 contains: " << vector1.size() << " elements" << endl;
 
   //Moving to Vector2
