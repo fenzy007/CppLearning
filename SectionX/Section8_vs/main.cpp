@@ -20,6 +20,17 @@ int main(){
 
     */
 
+    //Increment/Decrement
+    int counter{10};
+    int result{0};
+
+    cout << "Counter: " << counter << endl;
+
+    result = counter++;
+    cout << "Counter: " << counter << endl;
+    cout << "Result: " << result << endl;
+
+
    //converting Euro to Dollar
    /*
 
@@ -102,6 +113,7 @@ int main(){
    */
 
   //Section Challenge
+  /*
 
   cout << "Enter the amount of cents you want to change: ";
   int change{0}; 
@@ -120,6 +132,7 @@ int main(){
   dollars = change / dollar_value;
   balance = change - (dollars * dollar_value);
   cout << "Dollars : " << change;
+  */
 
     return 0;
 }
