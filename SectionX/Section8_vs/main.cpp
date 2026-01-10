@@ -21,15 +21,16 @@ int main(){
     */
 
     //Increment/Decrement
+    /*
     int counter{10};
     int result{0};
 
     cout << "Counter: " << counter << endl;
 
-    result = counter++;
+    result = counter++ + 5; //the assignment happens before the increment
     cout << "Counter: " << counter << endl;
     cout << "Result: " << result << endl;
-
+    */
 
    //converting Euro to Dollar
    /*
@@ -58,9 +59,9 @@ int main(){
    int num3{0};
    
 
-//    cin >> num1;
-//    cin >> num2;
-//    cin >> num3;
+    //  cin >> num1;
+    //  cin >> num2;
+    //  cin >> num3;
    cin >> num1 >> num2 >> num3;
    
    const int sumNum = num1 + num2 + num3;
