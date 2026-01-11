@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+    //INTRO
     /*
     int num1{100};
     int num2{200};
@@ -134,6 +135,15 @@ int main(){
   balance = change - (dollars * dollar_value);
   cout << "Dollars : " << change;
   */
+
+  //COMPOUND ASSIGNMENT
+  int i = 5;
+
+//   i =+ 10; //PRINTS OUT 10
+//   cout << i << endl;
+
+  i += 10; //PRINTS OUT 15
+  cout << i << endl;
 
     return 0;
 }
